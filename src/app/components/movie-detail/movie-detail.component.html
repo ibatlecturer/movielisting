@@ -1,10 +1,59 @@
 
-{{movie.title}}
+<div class="container" *ngIf="movie">
+    <div class="row">
+        <div class="col-md-12"><h1>
+            {{movie.title}}
+            </h1></div>
+    </div>
+    <div class="row">
+       
+        <div class="col-md-4">     <ul class="list-group">
+            <li class="list-group-item active">CAST</li>
+            <li class="list-group-item" *ngFor="let castMember of movie.cast.split(',')">{{castMember}}</li>
+          
+          </ul></div>
+        <div class="col-md-8">
 
-<ul class="list-group">
-    <li class="list-group-item active">Cras justo odio</li>
-    <li class="list-group-item">Dapibus ac facilisis in</li>
-    <li class="list-group-item">Morbi leo risus</li>
-    <li class="list-group-item">Porta ac consectetur ac</li>
-    <li class="list-group-item">Vestibulum at eros</li>
-  </ul>
+            <table class="table">
+                <tr>
+                    <td>Mon</td><td>
+                            <span class="badge badge-secondary movietime" *ngFor="let time of movie.runningTimes.mon">{{time}}</span>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tue</td><td>    <span class="badge badge-secondary movietime" *ngFor="let time of movie.runningTimes.tue">{{time}}</span></td>
+                </tr>
+
+
+                <tr>
+                    <td>Wed</td><td>    <span class="badge badge-secondary movietime" *ngFor="let time of movie.runningTimes.wed">{{time}}</span></td>
+                </tr>
+
+                <tr>
+                    <td>Thu</td><td>    <span class="badge badge-secondary movietime" *ngFor="let time of movie.runningTimes.thu">{{time}}</span></td>
+                </tr>
+
+                <tr>
+                    <td>Fri</td><td>    <span class="badge badge-secondary movietime" *ngFor="let time of movie.runningTimes.fri">{{time}}</span></td>
+                </tr>
+
+                <tr>
+                    <td>Sat</td><td>    <span class="badge badge-secondary movietime" *ngFor="let time of movie.runningTimes.sat">{{time}}</span></td>
+                </tr>
+
+                
+                <tr>
+                    <td>Sun</td><td>    <span class="badge badge-secondary movietime" *ngFor="let time of movie.runningTimes.sun">{{time}}</span></td>
+                </tr>
+
+
+
+
+            </table>
+
+        </div>
+    
+
+
+</div>

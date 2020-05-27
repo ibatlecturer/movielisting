@@ -25,6 +25,8 @@ export class MovieDetailComponent implements OnInit {
     this.movieService.getListOfMovies().subscribe(movies => {
 
       this.movie = movies.find(movie => movie.id == movieId );
+
+      console.log(this.movie.runningTimes.mon);
     
     });
 

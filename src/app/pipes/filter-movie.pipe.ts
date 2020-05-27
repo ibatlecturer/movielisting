@@ -16,6 +16,10 @@ export class FilterMoviePipe implements PipeTransform {
     
     || movie.director.toLowerCase()
     .indexOf(movieSearchFilter.toLowerCase()) >= 0
+
+    ||
+    +movieSearchFilter == movie.year
+
     
     ));
 

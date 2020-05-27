@@ -8,12 +8,14 @@ import { MovielistingComponent } from './components/movielisting/movielisting.co
 
 import {FormsModule} from '@angular/forms';
 import { FilterMoviePipe } from './pipes/filter-movie.pipe';
+import { MovieDetailComponent } from './components/movie-detail/movie-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MovielistingComponent,
-    FilterMoviePipe
+    FilterMoviePipe,
+    MovieDetailComponent
   ],
   imports: [
     BrowserModule,

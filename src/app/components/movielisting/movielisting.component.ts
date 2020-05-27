@@ -5,11 +5,12 @@ import { MovieserviceService } from 'src/app/services/movieservice.service';
 @Component({
   selector: 'app-movielisting',
   templateUrl: './movielisting.component.html',
-  styleUrls: ['./movielisting.component.css']
+  styleUrls: ['./movielisting.component.css'] 
 })
 export class MovielistingComponent implements OnInit {
 
   movies: Movie[] = [];
+  searchMovie: string;
   constructor(private movieService: MovieserviceService) { }
 
   ngOnInit(): void {

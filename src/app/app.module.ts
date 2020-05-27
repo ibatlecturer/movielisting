@@ -6,16 +6,21 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MovielistingComponent } from './components/movielisting/movielisting.component';
 
+import {FormsModule} from '@angular/forms';
+import { FilterMoviePipe } from './pipes/filter-movie.pipe';
+
 @NgModule({
   declarations: [
     AppComponent,
-    MovielistingComponent
+    MovielistingComponent,
+    FilterMoviePipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
       AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

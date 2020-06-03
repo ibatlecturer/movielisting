@@ -8,7 +8,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class MovieserviceService {
 
-  private moviesUrl = `http://college-movies.herokuapp.com/`;
+  private moviesUrl = `https://college-movies.herokuapp.com/`;
   constructor(private http: HttpClient) { }
 
   getListOfMovies() : Observable<Movie[]> {

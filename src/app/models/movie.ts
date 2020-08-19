@@ -16,6 +16,13 @@ export interface RunningTime {
     fri: string[];
     sat: string[];
     sun: string[];
+}
 
+export interface Seat {
+
+    row: number;
+    col: number;
+    selected: boolean;
+    reserved: boolean;
 
 }

@@ -1,50 +1,68 @@
-
 <div class="container" *ngIf="movie">
     <div class="row">
-        <div class="col-md-12"><h1>
-            {{movie.title}}
-            </h1></div>
+        <div class="col-md-12">
+            <h1>
+                {{movie.title}}
+            </h1>
+        </div>
     </div>
+
     <div class="row">
-       
-        <div class="col-md-4">     <ul class="list-group">
-            <li class="list-group-item active">CAST</li>
-            <li class="list-group-item" *ngFor="let castMember of movie.cast.split(',')">{{castMember}}</li>
-          
-          </ul></div>
+
+        <div class="col-md-4">
+            <ul class="list-group">
+                <li class="list-group-item active">CAST</li>
+                <li class="list-group-item" *ngFor="let castMember of movie.cast.split(',')">{{castMember}}</li>
+
+            </ul>
+        </div>
         <div class="col-md-8">
 
             <table class="table">
                 <tr>
-                    <td>Mon</td><td>
-                            <span class="badge badge-secondary movietime" *ngFor="let time of movie.runningTimes.mon"><a routerLink="/booking">{{time}}</a></span>
+                    <td>Mon</td>
+                    <td>
+                        <span class="badge badge-secondary movietime" *ngFor="let time of movie.runningTimes.mon"><a
+                                routerLink="/booking">{{time}}</a></span>
 
                     </td>
                 </tr>
                 <tr>
-                    <td>Tue</td><td>    <span class="badge badge-secondary movietime" *ngFor="let time of movie.runningTimes.tue"><a routerLink="/booking">{{time}}</a></span></td>
+                    <td>Tue</td>
+                    <td> <span class="badge badge-secondary movietime" *ngFor="let time of movie.runningTimes.tue"><a
+                                routerLink="/booking">{{time}}</a></span></td>
                 </tr>
 
 
                 <tr>
-                    <td>Wed</td><td>    <span class="badge badge-secondary movietime" *ngFor="let time of movie.runningTimes.wed"><a routerLink="/booking">{{time}}</a></span></td>
+                    <td>Wed</td>
+                    <td> <span class="badge badge-secondary movietime" *ngFor="let time of movie.runningTimes.wed"><a
+                                routerLink="/booking">{{time}}</a></span></td>
                 </tr>
 
                 <tr>
-                    <td>Thu</td><td>    <span class="badge badge-secondary movietime" *ngFor="let time of movie.runningTimes.thu"><a routerLink="/booking">{{time}}</a></span></td>
+                    <td>Thu</td>
+                    <td> <span class="badge badge-secondary movietime" *ngFor="let time of movie.runningTimes.thu"><a
+                                routerLink="/booking">{{time}}</a></span></td>
                 </tr>
 
                 <tr>
-                    <td>Fri</td><td>    <span class="badge badge-secondary movietime" *ngFor="let time of movie.runningTimes.fri"><a routerLink="/booking">{{time}}</a></span></td>
+                    <td>Fri</td>
+                    <td> <span class="badge badge-secondary movietime" *ngFor="let time of movie.runningTimes.fri"><a
+                                routerLink="/booking">{{time}}</a></span></td>
                 </tr>
 
                 <tr>
-                    <td>Sat</td><td>    <span class="badge badge-secondary movietime" *ngFor="let time of movie.runningTimes.sat"><a routerLink="/booking">{{time}}</a></span></td>
+                    <td>Sat</td>
+                    <td> <span class="badge badge-secondary movietime" *ngFor="let time of movie.runningTimes.sat"><a
+                                routerLink="/booking">{{time}}</a></span></td>
                 </tr>
 
-                
+
                 <tr>
-                    <td>Sun</td><td>    <span class="badge badge-secondary movietime" *ngFor="let time of movie.runningTimes.sun"><a routerLink="/booking">{{time}}</a></span></td>
+                    <td>Sun</td>
+                    <td> <span class="badge badge-secondary movietime" *ngFor="let time of movie.runningTimes.sun"><a
+                                routerLink="/booking">{{time}}</a></span></td>
                 </tr>
 
 
@@ -53,7 +71,7 @@
             </table>
 
         </div>
-    
 
 
-</div>
+
+    </div>

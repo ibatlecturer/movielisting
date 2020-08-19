@@ -8,7 +8,8 @@ import { BookingComponent } from './components/booking/booking.component';
 const routes: Routes = [
   { path: 'movies', component: MovielistingComponent },
   { path: 'moviedetail/:id', component: MovieDetailComponent },
-  { path: 'booking', component: BookingComponent },
+  
+  { path: 'booking/:id/:tm', component: BookingComponent },
   { path: '', redirectTo: '/movies', pathMatch: 'full' },
 
 ];
